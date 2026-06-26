@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { TECH_CATEGORIES } from '../../data/techQuestions';
 
 const TechArena = () => {
-  const [selectedCategory, setSelectedCategory] = useState('Coding');
+  const [selectedCategory, setSelectedCategory] = useState('Coding');#IT IS THERE
   const [selectedLevel, setSelectedLevel] = useState('Easy');
   const [gameState, setGameState] = useState('setup'); 
   
