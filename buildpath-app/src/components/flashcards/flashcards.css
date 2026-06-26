@@ -1,0 +1,9 @@
+.fc-wrap{ display:flex; flex-direction:column; align-items:center; gap:18px; font-family:'JetBrains Mono', monospace; }
+.fc-card{ width:300px; min-height:280px; background:#0e1815; border:1px solid #163029; border-radius:18px; padding:22px; color:#cfe9de; cursor:grab; user-select:none; position:relative; box-shadow:0 20px 40px -16px rgba(0,0,0,0.6); }
+.fc-badge{ font-size:10px; color:#6f9384; }
+.fc-card h3{ margin:14px 0 10px; color:#39ff9e; font-family:'Space Grotesk', sans-serif; }
+.fc-card p{ font-size:13px; line-height:1.6; color:#a8c9bb; }
+.fc-hint{ position:absolute; bottom:14px; left:0; right:0; text-align:center; font-size:10px; color:#6f9384; }
+.fc-controls{ display:flex; gap:14px; }
+.fc-controls button{ padding:10px 20px; border-radius:30px; border:1px solid #163029; background:#0e1815; color:#cfe9de; cursor:pointer; font-family:inherit; }
+.fc-controls .fc-learned{ border-color:#39ff9e; color:#39ff9e; }

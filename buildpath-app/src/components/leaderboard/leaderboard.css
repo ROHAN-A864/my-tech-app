@@ -1,0 +1,15 @@
+.lb-wrap{ font-family: 'JetBrains Mono', monospace; color:#cfe9de; max-width:520px; margin:0 auto; }
+.lb-title{ display:flex; align-items:center; gap:10px; font-size:20px; margin-bottom:14px; }
+.lb-live{ font-size:10px; color:#39ff9e; animation:blinkLive 1.4s infinite; }
+@keyframes blinkLive{ 50%{opacity:0.3;} }
+.lb-list{ display:flex; flex-direction:column; gap:8px; }
+.lb-row{ display:flex; align-items:center; gap:12px; background:#0e1815; border:1px solid #163029; border-radius:10px; padding:10px 14px; transition:transform .2s; }
+.lb-row:hover{ transform:translateX(4px); }
+.lb-me{ border-color:#39ff9e; box-shadow:0 0 14px -4px #39ff9e; }
+.lb-rank{ width:24px; font-weight:700; color:#6f9384; text-align:center; }
+.rank-1{ color:#ffd24e; } .rank-2{ color:#c8c8c8; } .rank-3{ color:#cd7f32; }
+.lb-avatar{ width:28px; height:28px; border-radius:50%; }
+.lb-name{ flex:1; font-size:13px; }
+.lb-streak{ font-size:12px; color:#ffb547; }
+.lb-xp{ font-size:13px; color:#39ff9e; font-weight:700; }
+.lb-empty{ text-align:center; color:#6f9384; padding:20px; }

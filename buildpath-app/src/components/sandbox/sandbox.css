@@ -1,0 +1,17 @@
+.term-wrap{ font-family:'JetBrains Mono', monospace; background:#0a1210; border:1px solid #163029; border-radius:12px; max-width:640px; margin:0 auto; overflow:hidden; }
+.term-bar{ display:flex; align-items:center; gap:8px; padding:10px 14px; background:#0e1815; border-bottom:1px solid #163029; }
+.dot{ width:10px; height:10px; border-radius:50%; }
+.dot.red{ background:#ff5d6c; } .dot.amber{ background:#ffb547; } .dot.green{ background:#39ff9e; }
+.term-title{ margin-left:8px; font-size:11px; color:#6f9384; }
+.term-body{ padding:14px; height:280px; overflow-y:auto; color:#cfe9de; font-size:13px; }
+.term-line{ margin:0 0 4px; white-space:pre-wrap; font-family:inherit; }
+.term-input-row{ display:flex; gap:8px; align-items:center; }
+.prompt{ color:#39ff9e; }
+.term-input-row input{ flex:1; background:none; border:none; color:#cfe9de; font-family:inherit; font-size:13px; outline:none; }
+
+.css-pg-wrap{ display:flex; gap:24px; flex-wrap:wrap; justify-content:center; font-family:'JetBrains Mono', monospace; color:#cfe9de; }
+.css-pg-canvas{ width:280px; height:280px; display:flex; align-items:center; justify-content:center; background:#0a1210; border:1px solid #163029; border-radius:14px; }
+.css-pg-controls{ width:280px; display:flex; flex-direction:column; gap:12px; }
+.css-pg-slider{ display:flex; flex-direction:column; gap:4px; font-size:12px; }
+.css-pg-slider input{ width:100%; }
+.css-output{ background:#0e1815; border:1px solid #163029; border-radius:8px; padding:10px; font-size:11px; color:#4ee7ff; white-space:pre-wrap; }
