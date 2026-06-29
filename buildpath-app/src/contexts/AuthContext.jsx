@@ -8,7 +8,8 @@ import {
   get,
   onValue,
   signInAnonymously,
-  signInWithPopup,
+  signInWithRedirect,
+  getRedirectResult,
   onAuthStateChanged,
   googleProvider,
 } from "../firebase/firebase";
@@ -32,6 +33,12 @@ export function AuthProvider({ children }) {
         setProfile(null);
       }
       setLoading(false);
+    });
+
+    // 2. Ab iske neeche ye naya logic add kar de (Redirect handle karne ke liye)
+  getRedirectResult(auth)
+    .catch((error) => {
+      console.error("Redirect error:", error);
     });
     return unsub;
   }, []);
@@ -68,7 +75,7 @@ export function AuthProvider({ children }) {
   }
 
   async function loginGoogle() {
-    await signInWithPopup(auth, googleProvider);
+    await signInWithRedirect(auth, googleProvider);
   }
 
   async function logout() {

@@ -9,7 +9,7 @@ import {
   getAuth,
   signInAnonymously,
   GoogleAuthProvider,
-  signInWithPopup,
+  signInWithRedirect,
   onAuthStateChanged,
 } from "firebase/auth";
 import {
@@ -45,7 +45,7 @@ export const googleProvider = new GoogleAuthProvider();
 
 export {
   signInAnonymously,
-  signInWithPopup,
+  signInWithRedirect,
   onAuthStateChanged,
   ref,
   set,
